@@ -1,0 +1,192 @@
+# calorie-calculator
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie tracker</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style>
+            h1
+            {
+                color: green;
+                font-size: 200px;
+                background: #caedbb
+            }
+            h3{
+                color: darkgreen;
+                font-size: 50px;
+                background: #caedbb
+            }
+            v
+            {
+                color: black;
+                font-size: 30px;
+                background: #caedbb
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#90EE90">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/800px-Red_Apple.jpg" width=200 length="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Grapefruits_-_whole-halved-segments.jpg/800px-Grapefruits_-_whole-halved-segments.jpg" width="200" length="50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rice_diversity.jpg/220px-Rice_diversity.jpg" width="200" length="200">
+        <img src="https://static.toiimg.com/thumb/55453664.cms?width=1200&height=900" width="200" length="200">
+        <img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/272782_2200-732x549.jpg" width="200" length="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Paschal%27s_fried_chicken.jpg/220px-Paschal%27s_fried_chicken.jpg" width="200" length="200">
+
+        <h1 style="color:green" id="main">Calorie Tracker</h1>
+        <div>
+        <form action="" method="post" id="form_data" onsubmit="myfunction(); return false">
+            <label><h3 content="center">Full Name</h3></label>
+            <input type="text">
+            <br>
+            <br>
+            <label><h3>Age</h3></label>
+            <input type="number">
+            <br>
+            <br>
+            <label><h3>Gender</h3></label>
+            <br>
+            <input type="radio" name="name">
+            <label><v>Female</v></label>
+            <input type="radio" name="name">
+            <label><v>Male</v></label>
+            <br>
+            <br>
+            <label><h3>Email</h3></label>
+            <input type="email">
+            <br>
+            <br>
+            <label><h3>Breakfast</h3></label>
+            <select name="Brakefast">
+                <option value="0">choose</option>
+                <option value="39">idli</option>
+                <option value="75">puri</option>
+                <option value="100">salad</option>
+                <option value="250">dosa masala</option>
+                <option value="80">egg boiled</option>
+                <option value="305">puttu</option>
+                <option value="150">sambar</option>
+                <option value="83">ghee dosa</option>
+                <option value="99">appam</option>
+                <option value="145">pathiri</option>
+            </select>
+            <br>
+            <br>
+            <label><h3>Lunch</h3></label>
+            <select name="Lunch">
+                <option value="0">choose</h3></option>
+                <option value="160">rice</option>
+                <option value="100">salad</option>
+                <option value="80">egg boiles</option>
+                <option value="120">chikencurry</option>
+                <option value="202">biriyani</option>
+                <option value="250">mandi</option>
+                <option value="163">fried rice</option>
+                <option value="130">rice meal</option>
+                <option value="250">beef</option>
+                <option value="294">mutton</option>
+            </select>
+            <br>
+            <br>
+            <label><h3>Dinner</h3></label>
+            <select name="Dinner">
+                <option value="0">choose</h3></option>
+                <option value="100">salad</option>
+                <option value="80">eggboiled</option>
+                <option value="140">chappathi</option>
+                <option value="165">oats kanji</option>
+            </select>
+            <br>
+            <br>
+            <label><h3>Drinks</h3></label>
+            <select name="Drinks">
+                <option value="0">choose</option>
+                <option value="200">milkshake</option>
+                <option value="10">soda</option>
+                <option value="200">beer</option>
+                <option value="200">icecream</option>
+                <option value="60">milk without sugar</option>
+                <option value="75">milk with sugar</option>
+                <option value="30">lime juice</option>
+                <option value="83">wine</option>
+                <option value="150">pepsi</option>
+                <option value="38">coco cola</option>
+                <option value="10">black tea</option>
+                <option value="45">cappuccino</option>
+                <option value="45">milk tea</option>
+                <option value="60">plain milk</option>
+            </select>
+            <br>
+            <br>
+            <label><h3>Snacks</h3></label>
+            <select name="Snacks">
+                <option value="0">choose</option>
+                <option value="100">samosa</option>
+                <option value="75">cutlet</option>
+                <option value="140">egg puffs</option>
+                <option value="165">banana fry</option>
+                <option value="70">vada</option>
+                <option value="250">burger</option>
+                <option value="250">sandwitch</option>
+                <option value="120">chips</option>
+                <option value="30">biscuit</option>
+                <option value="610">pav bhaji</option>
+                <option value="427">french fries</option>
+                <option value="100">jalebi</option>
+            </select>
+            <br>
+            <br>
+            <label><h3>Fruits</h3></label>
+            <select name="Fruits">
+                <option value="0">choose</option>
+                <option value="62.3">apple</option>
+                <option value="144.3">avocado</option>
+                <option value="110.6">banana</option>
+                <option value="54.2">blackberry fruit</option>
+                <option value="59.7">cherries red</option>
+                <option value="98.9">custard apple</option>
+                <option value="320.2">dates,dry</option>
+                <option value="81.5">fig</option>
+                <option value="60.7">grapes</option>
+                <option value="32.2">guava</option>
+                <option value="72.1">jackfruit</option>
+                <option value="27.2">sweetlime</option>
+                <option value="53.7">litchi</option>
+                <option value="41.8">mango</option>
+                <option value="37.2">orange</option>
+                <option value="23.9">papaya</option>
+                <option value="40.1">peach</option>
+                <option value="43">pineapple</option>
+                <option value="56.8">plum</option>
+                <option value="54.7">pomegranate</option>
+                <option value="305.6">raisins,black</option>
+                <option value="73.3">sapota</option>
+                <option value="24.6">strawberry</option>
+                <option value="20.3">watermelon</option>
+                <option value="112">kiwi</option>
+                <option value="17">passion fruit</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Check My Calorie">
+            <!-- <button id="submit" onclick="myfunction();">Check My Calorie</button> -->
+        </form>
+        <p id="out"></p>
+        <div>
+
+
+
+
+
+<script src="main.js"></script>
+
+
+    </body>
+
+
+
+</html>
+r
